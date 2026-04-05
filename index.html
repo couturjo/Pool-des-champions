@@ -1669,7 +1669,7 @@ async function analyzeRoster(dgName) {
   try {
     const resp = await fetch('https://api.anthropic.com/v1/messages', {
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},
+      headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true','x-api-key':'YOUR_API_KEY_HERE'},
       body: JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:600,
@@ -1701,7 +1701,7 @@ async function claudeAnalyze(dgName) {
   try {
     const resp = await fetch('https://api.anthropic.com/v1/messages', {
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},
+      headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true','x-api-key':'YOUR_API_KEY_HERE'},
       body: JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:800,
@@ -1726,7 +1726,7 @@ async function show90sAnalysis(dgName) {
   try {
     const resp = await fetch('https://api.anthropic.com/v1/messages', {
       method:'POST',
-      headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true'},
+      headers:{'Content-Type':'application/json','anthropic-dangerous-direct-browser-access':'true','x-api-key':'YOUR_API_KEY_HERE'},
       body: JSON.stringify({
         model:'claude-sonnet-4-20250514',
         max_tokens:500,
